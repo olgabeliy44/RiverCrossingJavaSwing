@@ -1,30 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.rivercrossing.rivercrossinggame;
 
-import com.rivercrossing.RiverCrossingSwing;
-import com.rivercrossing.color.ColorUI;
-import com.rivercrossing.componentes.ExTable;
-import com.rivercrossing.componentes.ExUtilities;
-import java.awt.Color;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import java.awt.List;
-import java.awt.event.ActionEvent;
 import java.util.ArrayList;
-import javax.swing.AbstractAction;
-import javax.swing.Action;
-import javax.swing.JList;
 import javax.swing.JOptionPane;
-import javax.swing.ListSelectionModel;
 import javax.swing.JRadioButton;
-/**
- *
- * @author Carlos
- */
+import java.util.Scanner;
+
 @SuppressWarnings("serial")
 public class RiverCrossingGame extends javax.swing.JFrame {
     
@@ -44,21 +24,13 @@ public class RiverCrossingGame extends javax.swing.JFrame {
     
     // Result Item
     private final ArrayList<Item> listItem = new ArrayList<>();
+    
+    static Scanner reader;
     /**
      * Creates new form RiverCrossingGame
      */
     public RiverCrossingGame() {
-        ColorUI colorUI = new ColorUI(new Color(0,107,196), new Color(0,76,140), new Color(88,165,240), new Color(153,153,153), new Color(255,255,255), new Color(102,102,102), new Color(204,204,204));
-        RiverCrossingSwing eu =  new RiverCrossingSwing(colorUI);
-        
-        eu.createUI();
         initComponents();
-        ExUtilities.modificarElementos(colorUI,eu.getExComboBox() ,jPanel1);
-        ExUtilities.addPlaceHolder(jTextFieldState, "jTextFieldUsername", "Please input your name");
-        ExUtilities.eliminarBordesScrollPane(jPanel1);
-        
-        //MODIFICAR BOTONES
-        ExUtilities.modificarBotones(eu.getExButton(), jPanel1);    
     }
 
     /**
@@ -518,7 +490,7 @@ public class RiverCrossingGame extends javax.swing.JFrame {
 
         strPlayerName = jTextFieldPlayer.getText();
 
-        if(strPlayerName != "") {
+        if(!"".equals(strPlayerName)) {
             riverCrossingGame.initConfigure(strPlayerName); // init configure
         }
     }//GEN-LAST:event_jTextFieldPlayerActionPerformed
@@ -763,7 +735,9 @@ public class RiverCrossingGame extends javax.swing.JFrame {
 
         riverCrossingGame =  new RiverCrossingGame();
         /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 riverCrossingGame.setVisible(true);
                 
@@ -773,7 +747,6 @@ public class RiverCrossingGame extends javax.swing.JFrame {
                 riverCrossingGame.initView();
             }
         });
-        
     }
     
     private void initConfigure(String playerName) {
@@ -815,22 +788,6 @@ public class RiverCrossingGame extends javax.swing.JFrame {
         jTextFieldState.setText("");
         
         listH.removeAll();
-//        jTextFieldPlayer.addActionListener(actionPlayer);
-    }
-    
-//    Action actionPlayer = new AbstractAction()
-//    {
-//        @Override
-//        public void actionPerformed(ActionEvent e)
-//        {
-//            System.out.println("some action");
-//        }
-//    };
-    
-    private void display() {
-       
-        System.out.println("start");
-        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -874,4 +831,243 @@ public class RiverCrossingGame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldState;
     private java.awt.List listH;
     // End of variables declaration//GEN-END:variables
+}
+
+
+
+
+
+/*
+********************************************************
+*********************** Classes ************************
+********************************************************
+*/
+
+/*
+***************** Farmer class ******************
+*/
+class Farmer {
+    
+    private String name;
+    private boolean canDrive = true;
+    private boolean isNorth = false;
+
+    public Farmer() {
+    }
+    
+    public Farmer(String name) {
+        this.name = name;
+    }
+
+    public Farmer(String name, boolean isNorth) {
+        this.name = name;
+        this.isNorth = isNorth;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isCanDrive() {
+        return canDrive;
+    }
+
+    public void setCanDrive(boolean canDrive) {
+        this.canDrive = canDrive;
+    }
+
+    public boolean isIsNorth() {
+        return isNorth;
+    }
+
+    public void setIsNorth(boolean isNorth) {
+        this.isNorth = isNorth;
+    }
+    
+}
+
+/*
+***************** Boat class ******************
+*/
+class Boat {
+
+    private int maxCapacity = 2;
+    private boolean isNorth;
+    
+    public Boat() {
+    }
+
+    public Boat(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+    }
+
+    public Boat(boolean isNorth) {
+        this.isNorth = isNorth;
+    }
+
+    public boolean isIsNorth() {
+        return isNorth;
+    }
+
+    public void setIsNorth(boolean isNorth) {
+        this.isNorth = isNorth;
+    }
+
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
+
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+    }
+    
+}
+
+/*
+***************** Wolf class ******************
+*/
+class Wolf{
+    
+    private boolean isNorth;// = false;
+    private int nOrder;// = 100;
+
+    public Wolf() {
+    }
+
+    public Wolf(boolean isNorth) {
+        this.isNorth = isNorth;
+    }
+
+    public Wolf(boolean isNorth, int nOrder) {
+        this.isNorth = isNorth;
+        this.nOrder = nOrder;
+    }
+
+    public boolean isIsNorth() {
+        return isNorth;
+    }
+
+    public void setIsNorth(boolean isNorth) {
+        this.isNorth = isNorth;
+    }
+
+    public int getnOrder() {
+        return nOrder;
+    }
+
+    public void setnOrder(int nOrder) {
+        this.nOrder = nOrder;
+    }
+
+}
+
+/*
+***************** Goat class ******************
+*/
+class Goat {
+
+    private boolean isNorth;// = false;
+    private int nOrder;// = 10;
+    
+    public Goat() {
+    }
+
+    public Goat(boolean isNorth, int nOrder) {
+        this.isNorth = isNorth;
+        this.nOrder = nOrder;
+    }
+
+    public boolean isIsNorth() {
+        return isNorth;
+    }
+
+    public void setIsNorth(boolean isNorth) {
+        this.isNorth = isNorth;
+    }
+
+    public int getnOrder() {
+        return nOrder;
+    }
+
+    public void setnOrder(int nOrder) {
+        this.nOrder = nOrder;
+    }
+    
+}
+
+/*
+***************** Cabbage class ******************
+*/
+class Cabbage {
+    
+    private boolean isNorth = false;
+    private int nOrder = 1;
+
+    public Cabbage() {
+    }
+
+    public Cabbage(boolean isNorth) {
+        this.isNorth = isNorth;
+    }
+
+    public boolean isIsNorth() {
+        return isNorth;
+    }
+
+    public void setIsNorth(boolean isNorth) {
+        this.isNorth = isNorth;
+    }
+
+    public int getnOrder() {
+        return nOrder;
+    }
+
+    public void setnOrder(int nOrder) {
+        this.nOrder = nOrder;
+    }
+    
+}
+
+// Item
+class Item {
+    private boolean isBoatInNorth = false;
+    private boolean isCabbageInNorth = false;
+    private boolean isGoatInNorth = false;
+    private boolean isWolfInNorth = false;
+    public Item() {
+    }
+    public Item(boolean isBoatInNorth, boolean isCabbageInNorth, boolean isGoatInNorth, boolean isWolfInNorth) {
+        this.isBoatInNorth = isBoatInNorth;
+        this.isCabbageInNorth = isCabbageInNorth;
+        this.isGoatInNorth = isGoatInNorth;
+        this.isWolfInNorth = isWolfInNorth;
+    }
+    public boolean isIsBoatInNorth() {
+        return isBoatInNorth;
+    }
+    public void setIsBoatInNorth(boolean isBoatInNorth) {
+        this.isBoatInNorth = isBoatInNorth;
+    }
+    public boolean isIsCabbageInNorth() {
+        return isCabbageInNorth;
+    }
+    public void setIsCabbageInNorth(boolean isCabbageInNorth) {
+        this.isCabbageInNorth = isCabbageInNorth;
+    }
+    public boolean isIsGoatInNorth() {
+        return isGoatInNorth;
+    }
+    public void setIsGoatInNorth(boolean isGoatInNorth) {
+        this.isGoatInNorth = isGoatInNorth;
+    }
+    public boolean isIsWolfInNorth() {
+        return isWolfInNorth;
+    }
+    public void setIsWolfInNorth(boolean isWolfInNorth) {
+        this.isWolfInNorth = isWolfInNorth;
+    }
 }
