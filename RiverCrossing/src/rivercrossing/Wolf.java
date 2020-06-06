@@ -3,22 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.rivercrossing.rivercrossinggame;
+package rivercrossing;
 
 /**
  *
  * @author K
  */
-public class Cabbage {
+public class Wolf{
     
-    private boolean isNorth = false;
-    private int nOrder = 1;
+    private boolean isNorth;// = false;
+    private int nOrder;// = 100;
 
-    public Cabbage() {
+    public Wolf() {
     }
 
-    public Cabbage(boolean isNorth) {
+    public Wolf(boolean isNorth) {
         this.isNorth = isNorth;
+    }
+
+    public Wolf(boolean isNorth, int nOrder) {
+        this.isNorth = isNorth;
+        this.nOrder = nOrder;
     }
 
     public boolean isIsNorth() {
@@ -36,5 +41,5 @@ public class Cabbage {
     public void setnOrder(int nOrder) {
         this.nOrder = nOrder;
     }
-    
+
 }

@@ -282,7 +282,7 @@
         <Component class="javax.swing.JLabel" name="j">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/waterPortrait.png"/>
+              <Image iconType="3" name="/rivercrossing/waterPortrait.png"/>
             </Property>
           </Properties>
           <AccessibilityProperties>
@@ -443,7 +443,7 @@
         <Component class="javax.swing.JLabel" name="jLabelFarmer_1north">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/farmer_small.png"/>
+              <Image iconType="3" name="/rivercrossing/farmer_small.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Farmer"/>
           </Properties>
@@ -451,7 +451,7 @@
         <Component class="javax.swing.JLabel" name="jLabelWolf_1north">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/wolf_small.png"/>
+              <Image iconType="3" name="/rivercrossing/wolf_small.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Wolf"/>
           </Properties>
@@ -459,7 +459,7 @@
         <Component class="javax.swing.JLabel" name="jLabelGoat_1north">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/goat_small.png"/>
+              <Image iconType="3" name="/rivercrossing/goat_small.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Goat"/>
           </Properties>
@@ -467,7 +467,7 @@
         <Component class="javax.swing.JLabel" name="jLabelCabbage_1north">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/cabbage_small.png"/>
+              <Image iconType="3" name="/rivercrossing/cabbage_small.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cabbage"/>
           </Properties>
@@ -475,7 +475,7 @@
         <Component class="javax.swing.JLabel" name="jLabelBoat_1north">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/boat_small.png"/>
+              <Image iconType="3" name="/rivercrossing/boat_small.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Boat"/>
           </Properties>
@@ -483,7 +483,7 @@
         <Component class="javax.swing.JLabel" name="jLabelFarmer_1south">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/farmer_small_south.png"/>
+              <Image iconType="3" name="/rivercrossing/farmer_small_south.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Farmer"/>
           </Properties>
@@ -491,7 +491,7 @@
         <Component class="javax.swing.JLabel" name="jLabelWolf_1south">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/wolf_small_south.png"/>
+              <Image iconType="3" name="/rivercrossing/wolf_small_south.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Wolf"/>
           </Properties>
@@ -499,7 +499,7 @@
         <Component class="javax.swing.JLabel" name="jLabelGoat_1south">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/goat_small_south.png"/>
+              <Image iconType="3" name="/rivercrossing/goat_small_south.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Goat"/>
           </Properties>
@@ -507,7 +507,7 @@
         <Component class="javax.swing.JLabel" name="jLabelCabbage_1south">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/cabbage_small_south.png"/>
+              <Image iconType="3" name="/rivercrossing/cabbage_small_south.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cabbage"/>
           </Properties>
@@ -515,7 +515,7 @@
         <Component class="javax.swing.JLabel" name="jLabelBoat_1south">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/rivercrossing/rivercrossinggame/boat_small_south.png"/>
+              <Image iconType="3" name="/rivercrossing/boat_small_south.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Boat"/>
           </Properties>

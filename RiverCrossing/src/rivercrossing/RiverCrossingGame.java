@@ -1,4 +1,4 @@
-package com.rivercrossing.rivercrossinggame;
+package rivercrossing;
 
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -119,7 +119,7 @@ public class RiverCrossingGame extends javax.swing.JFrame {
             }
         });
 
-        j.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/waterPortrait.png"))); // NOI18N
+        j.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/waterPortrait.png"))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel1.setText("You must not the cabbage with the goat or the goat with the wolf");
@@ -206,34 +206,34 @@ public class RiverCrossingGame extends javax.swing.JFrame {
                 .addComponent(jButtonRow, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jLabelFarmer_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/farmer_small.png"))); // NOI18N
+        jLabelFarmer_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/farmer_small.png"))); // NOI18N
         jLabelFarmer_1north.setText("Farmer");
 
-        jLabelWolf_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/wolf_small.png"))); // NOI18N
+        jLabelWolf_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/wolf_small.png"))); // NOI18N
         jLabelWolf_1north.setText("Wolf");
 
-        jLabelGoat_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/goat_small.png"))); // NOI18N
+        jLabelGoat_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/goat_small.png"))); // NOI18N
         jLabelGoat_1north.setText("Goat");
 
-        jLabelCabbage_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/cabbage_small.png"))); // NOI18N
+        jLabelCabbage_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/cabbage_small.png"))); // NOI18N
         jLabelCabbage_1north.setText("Cabbage");
 
-        jLabelBoat_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/boat_small.png"))); // NOI18N
+        jLabelBoat_1north.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/boat_small.png"))); // NOI18N
         jLabelBoat_1north.setText("Boat");
 
-        jLabelFarmer_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/farmer_small_south.png"))); // NOI18N
+        jLabelFarmer_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/farmer_small_south.png"))); // NOI18N
         jLabelFarmer_1south.setText("Farmer");
 
-        jLabelWolf_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/wolf_small_south.png"))); // NOI18N
+        jLabelWolf_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/wolf_small_south.png"))); // NOI18N
         jLabelWolf_1south.setText("Wolf");
 
-        jLabelGoat_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/goat_small_south.png"))); // NOI18N
+        jLabelGoat_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/goat_small_south.png"))); // NOI18N
         jLabelGoat_1south.setText("Goat");
 
-        jLabelCabbage_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/cabbage_small_south.png"))); // NOI18N
+        jLabelCabbage_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/cabbage_small_south.png"))); // NOI18N
         jLabelCabbage_1south.setText("Cabbage");
 
-        jLabelBoat_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/rivercrossing/rivercrossinggame/boat_small_south.png"))); // NOI18N
+        jLabelBoat_1south.setIcon(new javax.swing.ImageIcon(getClass().getResource("/rivercrossing/boat_small_south.png"))); // NOI18N
         jLabelBoat_1south.setText("Boat");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

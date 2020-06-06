@@ -3,25 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.rivercrossing.rivercrossinggame;
+package rivercrossing;
 
 /**
  *
  * @author K
  */
-public class Wolf{
-    
+public class Goat {
+
     private boolean isNorth;// = false;
-    private int nOrder;// = 100;
-
-    public Wolf() {
+    private int nOrder;// = 10;
+    
+    public Goat() {
     }
 
-    public Wolf(boolean isNorth) {
-        this.isNorth = isNorth;
-    }
-
-    public Wolf(boolean isNorth, int nOrder) {
+    public Goat(boolean isNorth, int nOrder) {
         this.isNorth = isNorth;
         this.nOrder = nOrder;
     }
@@ -41,5 +37,5 @@ public class Wolf{
     public void setnOrder(int nOrder) {
         this.nOrder = nOrder;
     }
-
+    
 }
